@@ -18,19 +18,17 @@ public class VirtualPetApplication {
 
 
         pet1.statusReport();
-
 //        System.out.println(pet1.getName() + "Has a fatigue level of "+pet1.getFatigue());
 
 //        String myCat = "Doolittle";
-//
 
 //        System.out.println("Meet "+ myCat);
 //
 //        System.out.println(myCat + " fatigue level is " + pet1.getFatigue());
-        //        Instant variables/attributes/fields
 
 
-        while (pet1.getFatigue()>0&&pet1.getHappy()>0&&pet1.getHunger()>0&&pet1.getThirst()>0); {
+        while (pet1.getFatigue() > 0 && pet1.getHappy() > 0 && pet1.getHunger() > 0 && pet1.getThirst() > 0) ;
+        {
             System.out.println("What would you like to do?");
             System.out.println("1. Pet " + nameChoice + " to sleep.");
             System.out.println("2. Give " + nameChoice + " some chicken.");
@@ -40,21 +38,16 @@ public class VirtualPetApplication {
 
             int option = input.nextInt();
 
-            if (option==1) {
+            if (option == 1) {
                 System.out.println("Give " + nameChoice + " fluffy pillow to sleep.");
                 pet1.sleep();
-            }
-            else if (option ==2) {
+            } else if (option == 2) {
                 System.out.println("Give " + nameChoice + " some chicken.");
                 pet1.feedChicken();
-            }
-
-            else if (option==3){
+            } else if (option == 3) {
                 System.out.println("Give " + nameChoice + " some water!");
                 pet1.giveWater();
-            }
-
-            else if (option==4) {
+            } else if (option == 4) {
                 System.out.println("You take " + nameChoice + " to play.");
                 pet1.play();
             }
@@ -64,8 +57,6 @@ public class VirtualPetApplication {
         }
         System.out.println("Game Over!");
 
-
         input.close();
-//        does nothing;
     }
 }
