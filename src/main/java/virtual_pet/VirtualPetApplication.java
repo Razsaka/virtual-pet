@@ -27,8 +27,7 @@ public class VirtualPetApplication {
 //        System.out.println(myCat + " fatigue level is " + pet1.getFatigue());
 
 
-        while (pet1.getFatigue() > 0 && pet1.getHappy() > 0 && pet1.getHunger() > 0 && pet1.getThirst() > 0) ;
-        {
+        while (pet1.getFatigue() > 0 && pet1.getHappy() > 0 && pet1.getHunger() > 0 && pet1.getThirst() > 0) {
             System.out.println("What would you like to do?");
             System.out.println("1. Pet " + nameChoice + " to sleep.");
             System.out.println("2. Give " + nameChoice + " some chicken.");
