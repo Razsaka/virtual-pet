@@ -20,6 +20,14 @@ public class VirtualPetApplication {
         pet1.statusReport();
 
 
+<<<<<<< HEAD
+=======
+//        System.out.println("Meet "+ myCat);
+//
+//        System.out.println(myCat + " fatigue level is " + pet1.getFatigue());
+
+
+>>>>>>> 1dc9b1f276c2f09a9eafa08026753acc83d20bd8
         while (pet1.getFatigue() > 0 && pet1.getHappy() > 0 && pet1.getHunger() > 0 && pet1.getThirst() > 0) {
             System.out.println("What would you like to do?");
             System.out.println("1. Pet " + nameChoice + " to sleep.");
