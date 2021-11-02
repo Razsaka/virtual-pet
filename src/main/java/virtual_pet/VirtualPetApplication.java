@@ -14,27 +14,19 @@ public class VirtualPetApplication {
         String nameChoice = input.nextLine();
 
 
-        virtualPet pet1 = new virtualPet(nameChoice);
+        virtualPet pet1 = new virtualPet(nameChoice,35, 20, 15, 25);
 
 
         pet1.statusReport();
-//        System.out.println(pet1.getName() + "Has a fatigue level of "+pet1.getFatigue());
-
-//        String myCat = "Doolittle";
-
-//        System.out.println("Meet "+ myCat);
-//
-//        System.out.println(myCat + " fatigue level is " + pet1.getFatigue());
 
 
-        while (pet1.getFatigue() > 0 && pet1.getHappy() > 0 && pet1.getHunger() > 0 && pet1.getThirst() > 0) ;
-        {
+        while (pet1.getFatigue() > 0 && pet1.getHappy() > 0 && pet1.getHunger() > 0 && pet1.getThirst() > 0) {
             System.out.println("What would you like to do?");
             System.out.println("1. Pet " + nameChoice + " to sleep.");
             System.out.println("2. Give " + nameChoice + " some chicken.");
             System.out.println("3. Give " + nameChoice + " some water.");
             System.out.println("4. Give " + nameChoice + " a toy.");
-            System.out.println("6. Gives up");
+            System.out.println("5. Gives up");
 
             int option = input.nextInt();
 
@@ -51,8 +43,14 @@ public class VirtualPetApplication {
                 System.out.println("You take " + nameChoice + " to play.");
                 pet1.play();
             }
+            else {
+                System.out.println("Give up");
+                break;
+            }
+
 
             pet1.tick();
+            pet1.statusReport();
 
         }
         System.out.println("Game Over!");
