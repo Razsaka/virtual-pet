@@ -1,6 +1,6 @@
 package virtual_pet;
 
-public class virtualPet {
+public class VirtualPet {
 
 
     //        Instant variables/attributes/fields
@@ -10,7 +10,7 @@ public class virtualPet {
     private int thirst;
     private int happy;
 
-    public virtualPet(String name, int fatigue,int hunger, int thirst,int happy) {
+    public VirtualPet(String name, int fatigue,int hunger, int thirst,int happy) {
         this.name = name;
         this.fatigue= fatigue;
         this.hunger= hunger;
@@ -43,9 +43,7 @@ public class virtualPet {
         this.hunger += 5;
         this.thirst += 3;
         this.happy += 10;
-//          Jordan suggestion for checking if pet has died
-//        if(hunger<=0){
-//        }
+
     }
 
     public void sleep() {
